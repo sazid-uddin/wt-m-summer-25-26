@@ -1,0 +1,64 @@
+<html>
+	<head>
+	</head>
+		<h1>Welcome to Web Tech</h1>
+		<h2>Summer 25-26</h2>
+		<p>World Wide Web - Connecting the world</p>
+
+		<form action="/submit-form.html" method="post" target="_blank">
+			<!-- HTML elements have attributes -->
+			<fieldset>
+				<legend>Name</legend>
+				<label>First Name:</label>
+				<input type="text" name="first-name" id="fn" placeholder="Please enter your first name">
+				<br>
+				<br>
+				<label>Last Name:</label>
+				<input type="text" name="last-name" id="ln">
+				<br>
+				<br>
+			</fieldset>
+			<label>Email:</label>
+			<input type="text" name="email" id="email">
+			<br>
+			<br>
+			<label>Password:</label>
+			<input type="password" name="password" id="password">
+			<br>
+			<br>
+			<input type="radio" name="gender"> Male
+			<br>
+			<input type="radio" name="gender"> Female
+			<br>
+			<input type="radio" name="gender"> Other
+			<br>
+			<input type="checkbox" id="terms" name="terms"> Agree to Terms and conditions?
+			<br>
+			<input type="button" value="This is a button">
+			<br>
+			<input type="file">
+			<br>
+			<input type="hidden" value="my-secret-value">
+			<br>
+			Age: <input type="number" value="0" min="0" max="100">
+			<br>
+			<input type="range">
+			<br>
+			<select name="gender" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			<br>
+			<br>
+			<input type="submit" value="Submit Form">
+			<input type="reset" value="Refresh Form">
+		</form>
+	</body>
+</html>
+
+<!-- <script>
+	const fni =document.getElementById("fn").addEventListener("click",() => {
+		alert("First name input clicked");
+	});
+</script> -->
