@@ -1,0 +1,95 @@
+h1 {
+	color: red;
+	background-color: aqua;
+	font-family: 'Courier New';
+}
+
+/* css-property: value; */
+h2 {
+	text-align: right;
+}
+
+p {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#my-heading {
+	border: 2px solid red;
+}
+
+/* <my-heading></my-heading> */
+/* #fn, #ln, .my-input, p  { */
+.my-input {
+	border: 2px solid aqua;
+	border-radius: 5px;
+	/* background-color: khaki; */
+	color: blue;
+}
+
+* {
+	text-align: center;
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: grey;
+	background-color: red;
+}
+
+a:active {
+	font-family: Arial;
+}
+
+#ln:focus {
+	border: 5px solid red;
+
+}
+
+a.highlight {
+	background-color: yellow;
+}
+
+a.dark {
+	font-style: italic;
+}
+
+#my-p {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+}
+
+div:hover #my-p {
+	display: block;
+}
+
+div {
+	height: 20px;
+	/* width: 20px; */
+	border: 2px solid green;
+}
+
+input[id="email"] {
+	border: 5px dashed black;
+}
+
+a[target] {
+	background-color: red;
+}
+
+input[name*="name"] {
+	background-color: rgba(100,0,0,.5);
+}
+
+#password {
+	margin: 30px;
+}
