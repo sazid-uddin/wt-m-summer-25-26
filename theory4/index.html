@@ -6,10 +6,58 @@
 	<title>Document</title>
 	<script src="script.js"></script>
 	<script>
-		alert("hello");
+		// alert("hello");
 	</script>
 </head>
 <body>
-	<h1>JS Demo</h1>	
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+	<h1 id="my-heading">JS Demo</h1>
+	<table>
+		<tr id="my-row">
+			<td>item 1</td>
+		</tr>
+	</table>
+	<br>
+	<button id="change-text-button">Change inner text</button>
+	<script>
+		var myRow = document.getElementById("my-row");
+		myRow.innerHTML = "<th>Header 1</th><th>Header 2</th>"
+
+
+
+
+
+
+
+
+		var changeTextButton = document.getElementById("change-text-button");
+		var h1 = document.getElementById("my-heading");
+		changeTextButton.addEventListener("click", () => {
+			// h1.innerText = "test";
+			h1.innerHTML = "test";
+			alert("changed h1 text");
+		});
+		// // manipulate h1 element
+		// var h1 = document.getElementById("my-heading");
+		// console.log(h1);
+		// h1.innerText = "Test";
+
+		// function addTwoNumbers(n1, n2) {
+		// 	return n1+n2;
+		// }
+
+		// // addTwoNumbers(1,2);
+
+		// const addTwoNumbers = () => n1+n2;
+		// const addTwoNumbers = () => {
+		// 	var c = n1+n2;
+		// 	return c;
+		// };
+	</script>
 </body>
 </html>

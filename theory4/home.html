@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Hello world</h1>	
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus officiis. Eius perspiciatis fuga illum veritatis animi sed accusamus quos quaerat reprehenderit deserunt officiis, laborum, a odio cum, iusto repellendus.</p>
+	<script>
+		function writeDoc(text) {
+			document.write(text);
+		}
+		document.addEventListener("DOMContentLoaded", writeDoc);
+
+		var a = 2;
+		var b = 3;
+		if (a == b) {
+			return "a and b are equal";
+		} else {
+			return "a and b are NOT equal";
+		}
+
+		// (condition) ? (if true) : (if false);
+		console.log((a == b) ? "a and b are equal" : "a and b are NOT equal");
+	</script>
+</body>
+</html>
