@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+        </style>
+        <table id="myTable">
+            <tr id="mytr">
+                <th class="th1">ID</th>
+                <th>Name</th>
+            </tr>
+        </table>
+        <button class="th1" onclick="loadData()">Load Data</button>
+        <!-- <button onclick="loadData()">Load Data</button> -->
+		 <!-- [] -->
+		 <!-- [b1] -->
+		<!-- [b1, b2] -->
+    </body>
+    <script>
+        function loadData() {
+            var studentList = [
+                {
+                    name: "ABC",
+                    id: 123,
+                },
+                {
+                    name: "DEF",
+                    id: 456,
+                },
+                {
+                    name: "GHI",
+                    id: 789,
+                },
+            ];
+
+			// studentList.forEach
+            for (var i=0; i<studentList.length; i++) {
+                var myTable = document.getElementById("myTable");
+                var newStudentRow = document.createElement("tr");
+
+                var newStudentIDTd = document.createElement("td");
+                newStudentIDTd.innerText = studentList[i].id;
+				// newStudentIDTd.className = "th1";
+                var newStudentNameTd = document.createElement("td");
+                newStudentNameTd.innerText = studentList[i].name;
+
+                newStudentRow.appendChild(newStudentIDTd);
+                newStudentRow.appendChild(newStudentNameTd);
+
+                myTable.appendChild(newStudentRow);
+            }
+
+			// document.getElementById("id") -> a single element
+			// document.getElementsByTagName("button")[0].remove(); // -> always returns an array of elements
+			// console.log(document.getElementsByClassName("th1"));
+
+			document.getElementById("mytr").style.backgroundColor = "red"; // camelCase;
+			document.getElementById("mytr").style.fontSize = "50px"; // camelCase;
+			document.getElementById("mytr").setAttribute("href", "https://www.google.com");
+			//font-size: 12px; // kebab-case
+			//background-color
+
+
+        }
+    </script>
+</html>
